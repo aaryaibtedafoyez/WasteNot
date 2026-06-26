@@ -1,0 +1,59 @@
+.auth-page {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 20px;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  padding: 36px 32px;
+}
+
+.auth-card h2 {
+  font-size: 1.5rem;
+}
+
+.auth-card__sub {
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+  margin: 8px 0 24px;
+}
+
+.auth-card .btn {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.auth-card__footer {
+  text-align: center;
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+  margin: 18px 0 0;
+}
+
+.role-toggle {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.role-toggle__option {
+  flex: 1;
+  padding: 9px 10px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: #fff;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+
+.role-toggle__option.is-active {
+  border-color: var(--leaf-green);
+  color: var(--leaf-green-dark);
+  background: rgba(27, 67, 50, 0.06);
+}

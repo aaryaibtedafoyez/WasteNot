@@ -1,0 +1,105 @@
+.item-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--leaf-green);
+  border-radius: var(--radius-md);
+  padding: 16px 18px;
+}
+
+.item-card--aging {
+  border-left-color: var(--turmeric);
+}
+
+.item-card--near_expiry {
+  border-left-color: var(--turmeric);
+  background: rgba(224, 122, 62, 0.04);
+}
+
+.item-card--expired {
+  border-left-color: var(--brick);
+  background: rgba(139, 38, 53, 0.03);
+}
+
+.item-card__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.item-card__top h4 {
+  font-size: 1.02rem;
+  margin-bottom: 2px;
+}
+
+.item-card__meta {
+  font-size: 0.74rem;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.item-card__freshness {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 14px 0 12px;
+}
+
+.item-card__bar {
+  flex: 1;
+  height: 6px;
+  background: var(--rice-paper-dim);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.item-card__bar-fill {
+  height: 100%;
+  background: var(--leaf-green);
+  transition: width 0.4s ease;
+}
+
+.item-card__bar-fill--aging {
+  background: var(--turmeric);
+}
+
+.item-card__bar-fill--near_expiry {
+  background: var(--turmeric-light);
+}
+
+.item-card__bar-fill--expired {
+  background: var(--brick);
+}
+
+.item-card__score {
+  font-size: 0.74rem;
+  color: var(--ink-soft);
+  min-width: 32px;
+  text-align: right;
+}
+
+.item-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  border-top: 1px solid var(--line);
+  padding-top: 12px;
+}
+
+.item-card__days {
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+}
+
+.item-card__actions {
+  display: flex;
+  gap: 6px;
+}
+
+.item-card__btn {
+  padding: 6px 10px;
+  font-size: 0.78rem;
+}
