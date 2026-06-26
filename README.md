@@ -36,7 +36,7 @@ wastenot/
 ```bash
 cd server
 npm install
-cp .env.example .env
+cp  .env
 ```
 
 Edit `.env`:
@@ -56,7 +56,7 @@ This starts the API on `http://localhost:5000`. Visit `http://localhost:5000/api
 ```bash
 cd client
 npm install
-cp .env.example .env
+cp ..env
 npm run dev
 ```
 
